@@ -1,0 +1,150 @@
+    /* navbar */
+    @media (max-width:1440px) {
+        header{
+            .logo {
+                img {
+                width: 5rem;
+                }
+            }
+            .lupa {
+                img {
+                width: 2rem;
+                }
+            }
+                nav ul {
+                padding-bottom: 2%; 
+                a {
+                    text-align: left;
+                    font-size: 1.5rem;
+                    padding: 0.9rem;
+                    &:hover {
+                        color: $color_titulo;
+                    }
+                }
+            }
+        }
+    }
+    
+    /* titulo */
+    @media (max-width:1440px) {
+        .principal {
+            grid-template-rows: repeat(2, 11rem);
+        }
+        .titulo 
+            h1{
+            font-size: 2.8rem;
+            }
+            h2{
+            font-size: 2.4rem;
+            }
+        }
+    
+    /* servicios 1*/
+    @media (max-width:1440px) {
+        .servicios1{
+            margin: 15rem 0 5rem;
+            gap: 8rem;
+            grid-template-columns:repeat(2, 26rem);
+            grid-template-rows: repeat(2, 12rem);
+            button{
+                font-size: 1.6rem;
+            }
+        }
+    }
+    
+    /* seccion media */
+    @media (max-width:1440px){
+        .medio{
+            font-size: 1.6rem;
+        }
+    }
+    
+    /* servicios 2 */
+    @media (max-width:1440px) {
+        .servicios2{
+            grid-template-columns:repeat(2, 18rem);
+            grid-template-rows: repeat(3, 7rem);
+            justify-content: center;
+            gap: 2.2rem 12rem;
+            button{
+            font-size: 1.3rem;
+            border-radius:2rem;
+            }
+        }
+    }
+    
+    /* footer */
+    @media (max-width:1440px) {
+        footer p{
+            font-size: 1.1rem;
+            padding: 2%;
+        }
+    }
+    
+    /***** UNIDADES ******/
+    @media (max-width:1440px) {
+        .unidades1{
+            gap: 2rem 8rem;
+            grid-template-columns:repeat(2, 22rem);
+            grid-template-rows: repeat(3, 9rem);
+            margin: 15rem 0 5rem;
+            button{
+                font-size: 1.4rem;
+            }  
+        }
+    }
+        
+    /***** INVENTARIO ******/
+    @media (max-width:1440px) {
+        .ingreso{
+            gap: 4rem;
+            margin: 15rem 0 5rem;
+            grid-template-columns:repeat(2, 21rem);
+            grid-template-rows: repeat(2, 9rem);
+            button{
+                font-size: 1.4rem;
+            }
+        }
+    }
+    
+    /***** PROCEDIMIENTOS ******/
+    @media (max-width:1440px) {
+        .documentos{
+            gap: 3rem;
+            margin: 15rem 0 5rem;
+            grid-template-columns:repeat(2, 22rem);
+            grid-template-rows: repeat(3, 6rem);
+            button{
+                font-size: 1.2rem;
+                &:hover{
+                    @include anim3((width 2s, height 2s, margin 2s),110%,110px,5% auto,$color_sombra2,$color_sombra,1.4rem)
+                }
+            }
+        }
+    }
+    
+    /***** CONTACTOS ******/
+    @media (max-width:1440px) {
+        .form-container {
+            margin: 15rem 0 5rem;
+            width:80%;
+            label {
+                font-size: 1.5rem;
+                p{
+                font-size: 1.3rem;
+                }
+            }
+            input{
+                width: 17rem;
+                height: 3rem;      
+                }
+            textarea {
+                height: 8rem;
+                }
+            button {
+                margin-top: 1rem;
+                font-size: 1.2rem;
+                padding: 1rem;
+                }
+        }
+    }

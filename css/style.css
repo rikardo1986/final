@@ -1,0 +1,1645 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(217, 217, 217);
+}
+
+@font-face {
+  font-family: fuente1;
+  src: url("../assets/fonts/NotoSans.ttf");
+}
+@font-face {
+  font-family: fuente2;
+  src: url("../assets/fonts/MerriweatherSans.ttf");
+}
+header {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* TITULO */
+.principal {
+  display: grid;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  margin-bottom: -10%;
+  grid-template-columns: repeat(6, 16.6%);
+  grid-template-rows: repeat(2, 15rem);
+}
+
+.foto_principal {
+  grid-column: 1/5;
+  grid-row: 1/3;
+}
+.foto_principal img {
+  width: 100%;
+  height: 100%;
+}
+
+.titulo {
+  background-color: rgb(24, 45, 152);
+  border-radius: 250px 0 0 250px;
+  grid-column: 4/7;
+  grid-row: 1/3;
+  justify-content: center;
+}
+.titulo h1, .titulo h2 {
+  font-family: fuente2;
+  font-size: 4rem;
+  color: rgb(248, 117, 22);
+  text-align: center;
+  padding-top: 10%;
+}
+.titulo h2 {
+  font-size: 3.5rem;
+  color: white;
+  padding-top: 8%;
+}
+
+/* SERVICIOS 1*/
+.servicios1 {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  justify-content: center;
+  gap: 10rem;
+  grid-template-columns: repeat(2, 35rem);
+  grid-template-rows: repeat(2, 18rem);
+  margin: 15rem 0 5rem;
+}
+.servicios1 button {
+  background-size: cover;
+  border-radius: 5%;
+  font-family: fuente2;
+  text-shadow: 0.4rem 0.25rem 0.3rem black;
+  font-size: 1.8rem;
+  border-color: rgb(217, 217, 217);
+  color: white;
+}
+.servicios1 button:first-child {
+  background-image: url("../assets/img/ticket.png");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.servicios1 button:nth-child(2) {
+  background-image: url("../assets/img/outlook.png");
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.servicios1 button:nth-child(3) {
+  background-image: url("../assets/img/carpetas.png");
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.servicios1 button:last-child {
+  background-image: url("../assets/img/vpn1.jpg");
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.servicios1 button:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px gray);
+  transition: transform 200ms linear 100ms;
+  align-content: center;
+}
+
+/* SECCION MEDIA */
+.medio {
+  width: 100%;
+  height: 30%;
+  background-color: rgb(24, 45, 152);
+  padding: 2%;
+  color: white;
+  font-family: fuente2;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* SERVICIOS 2 */
+.servicios2 {
+  width: 100%;
+  display: grid;
+  margin-bottom: 5%;
+  grid-template-columns: repeat(2, 24rem);
+  grid-template-rows: repeat(3, 10rem);
+  justify-content: center;
+  gap: 5rem 20rem;
+  padding-top: 4%;
+}
+.servicios2 button {
+  background-color: rgb(219, 150, 47);
+  border-color: transparent;
+  color: #182c97;
+  font-family: fuente2;
+  text-align: center;
+  font-size: 1.8rem;
+  border-radius: 2.5rem;
+  box-shadow: 5px 5px 5px gray;
+}
+.servicios2 button:first-child {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.servicios2 button:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.servicios2 button:nth-child(3) {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.servicios2 button:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.servicios2 button:nth-child(5) {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.servicios2 button:last-child {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.servicios2 button:active {
+  background-color: rgb(24, 45, 152);
+  color: white;
+}
+
+footer {
+  background-color: rgb(24, 45, 152);
+}
+footer p {
+  color: white;
+  font-family: fuente2;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 2%;
+}
+
+/***** UNIDADES ******/
+.unidades1 {
+  width: 100%;
+  display: grid;
+  gap: 10%;
+  margin: 15rem 0 5rem;
+  grid-template-columns: repeat(2, 30rem);
+  grid-template-rows: repeat(3, 14rem);
+  position: relative;
+  justify-content: center;
+}
+.unidades1 button {
+  background-size: cover;
+  border-radius: 2rem;
+  font-family: fuente2;
+  font-size: 3rem;
+  color: white;
+  text-shadow: gray 0.125rem 0.1rem;
+}
+.unidades1 button:first-child {
+  background-image: url("../assets/img/rrhh.PNG");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.unidades1 button:nth-child(2) {
+  background-image: url("../assets/img/finanzas.png");
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.unidades1 button:nth-child(3) {
+  background-image: url("../assets/img/uravit.png");
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.unidades1 button:nth-child(4) {
+  background-image: url("../assets/img/custodia.png");
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.unidades1 button:nth-child(5) {
+  background-image: url("../assets/img/comunicaciones.png");
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.unidades1 button:last-child {
+  background-image: url("../assets/img/informatica.png");
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.unidades1 button:hover {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px gray);
+  transition: transform 300ms linear 100ms;
+  align-content: center;
+}
+
+/***** PROCEDIMIENTOS ******/
+.documentos {
+  width: 100%;
+  display: grid;
+  margin: 15rem 0 5rem;
+  gap: 10%;
+  grid-template-columns: repeat(2, 30%);
+  grid-template-rows: repeat(3, 50%);
+  position: relative;
+  justify-content: center;
+}
+.documentos button {
+  color: white;
+  font-family: fuente2;
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 8%;
+}
+.documentos button:first-child {
+  background-color: rgb(24, 45, 152);
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.documentos button:nth-child(2) {
+  background-color: rgb(219, 150, 47);
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.documentos button:nth-child(3) {
+  background-color: rgb(24, 45, 152);
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+.documentos button:nth-child(4) {
+  background-color: rgb(219, 150, 47);
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.documentos button:nth-child(5) {
+  background-color: rgb(24, 45, 152);
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.documentos button:last-child {
+  background-color: rgb(219, 150, 47);
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+.documentos button:hover {
+  transition: width 2s, height 2s, margin 2s;
+  width: 100%;
+  height: 190px;
+  margin: 0 auto;
+  color: black;
+  background-color: gray;
+  font-size: 1.8rem;
+}
+
+/***** INVENTARIO ******/
+.ingreso {
+  width: 100%;
+  display: grid;
+  gap: 10%;
+  margin: 15rem 0 5rem;
+  grid-template-columns: repeat(2, 32rem);
+  grid-template-rows: repeat(2, 10rem);
+  position: relative;
+  justify-content: center;
+}
+.ingreso button {
+  background-position: center;
+  background-size: cover;
+  font-family: fuente2;
+  font-size: 2rem;
+  color: white;
+  padding-left: 50%;
+}
+.ingreso button:first-child {
+  background-image: url("../assets/img/nuevo.PNG");
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.ingreso button:nth-child(2) {
+  background-image: url("../assets/img/baja.PNG");
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.ingreso button:nth-child(3) {
+  background-image: url("../assets/img/asignados.PNG");
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.ingreso button:last-child {
+  background-image: url("../assets/img/exportar.PNG");
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.ingreso button:active {
+  transform: scale(1.1);
+  filter: drop-shadow(3px 3px 3px gray);
+  align-content: center;
+}
+
+/* CONTACTO */
+.form-container {
+  width: 60%;
+  margin: 2%;
+  padding-left: 30%;
+  position: relative;
+  margin: 15rem 0 5rem;
+}
+.form-container label {
+  font-family: fuente2;
+  font-size: 1.8rem;
+  color: #182c97;
+  display: flex;
+  margin-top: 5%;
+}
+.form-container label p {
+  color: red;
+}
+.form-container input {
+  width: 80%;
+  height: 3rem;
+  padding: 0.625rem;
+  border: 0.0625rem solid #ccc;
+}
+.form-container textarea {
+  width: 100%;
+  height: 8rem;
+}
+.form-container button {
+  background: rgb(219, 150, 47);
+  color: white;
+  margin-top: 1rem;
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.form-container button:active {
+  background-color: rgb(24, 45, 152);
+  color: white;
+}
+
+.logo {
+  width: 10%;
+}
+.logo img {
+  width: 8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  display: inline;
+}
+nav ul li a {
+  font-family: fuente1;
+  color: #182c97;
+  text-decoration: none;
+  padding: 1.25rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+nav ul li a:hover {
+  color: rgb(248, 117, 22);
+}
+
+.lupa {
+  width: 10%;
+}
+.lupa img {
+  width: 30%;
+  float: right;
+}
+
+/* Icono menu toggle */
+.menu-icon {
+  display: none;
+  font-size: 1.5em;
+  color: rgb(248, 117, 22);
+  cursor: pointer;
+}
+
+/* ocultar menu en la vista por defecto */
+.menu-toggle {
+  display: none;
+}
+
+.menu-toggle:checked + .menu-icon + nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+/* navbar */
+@media (max-width: 2560px) {
+  header .logo img {
+    width: 7rem;
+  }
+  header .lupa img {
+    width: 3rem;
+  }
+  header nav ul {
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.8rem;
+    padding: 0.75rem;
+  }
+  header nav ul a:hover {
+    color: rgb(248, 117, 22);
+  }
+}
+/* titulo */
+@media (max-width: 2560px) {
+  .titulo h1, .titulo h2 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 2560px) {
+  .servicios1 {
+    margin: 20rem 0 5rem;
+    gap: 8rem;
+    grid-template-columns: repeat(2, 26rem);
+    grid-template-rows: repeat(2, 12rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 2560px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 2560px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2.2rem 12rem;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 2560px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 2560px) {
+  .unidades1 {
+    margin: 20rem 0 5rem;
+    gap: 2rem 8rem;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3, 9rem);
+  }
+  .unidades1 button {
+    font-size: 1.4rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 2560px) {
+  .ingreso {
+    margin: 20rem 0 5rem;
+    gap: 4rem 20rem;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .ingreso button {
+    font-size: 1.4rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 2560px) {
+  .documentos {
+    margin: 20rem 0 5rem;
+    gap: 3rem 10rem;
+    grid-template-columns: repeat(2, 28rem);
+    grid-template-rows: repeat(3, 10rem);
+  }
+  .documentos button {
+    font-size: 1.2rem;
+    border-color: transparent;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 110%;
+    height: 120%;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.6rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 2560px) {
+  .form-container {
+    margin: 20rem 0 5rem;
+    width: 80%;
+  }
+  .form-container label {
+    font-size: 1.5rem;
+  }
+  .form-container label p {
+    font-size: 1.3rem;
+  }
+  .form-container input {
+    width: 17rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+/* navbar */
+@media (max-width: 1440px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0.9rem;
+  }
+  header nav ul a:hover {
+    color: rgb(248, 117, 22);
+  }
+}
+/* titulo */
+@media (max-width: 1440px) {
+  .principal {
+    grid-template-rows: repeat(2, 11rem);
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 2.8rem;
+  }
+  h2 {
+    font-size: 2.4rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 1440px) {
+  .servicios1 {
+    margin: 15rem 0 5rem;
+    gap: 8rem;
+    grid-template-columns: repeat(2, 26rem);
+    grid-template-rows: repeat(2, 12rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 1440px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 1440px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2.2rem 12rem;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 1440px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 1440px) {
+  .unidades1 {
+    gap: 2rem 8rem;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3, 9rem);
+    margin: 15rem 0 5rem;
+  }
+  .unidades1 button {
+    font-size: 1.4rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 1440px) {
+  .ingreso {
+    gap: 4rem;
+    margin: 15rem 0 5rem;
+    grid-template-columns: repeat(2, 21rem);
+    grid-template-rows: repeat(2, 9rem);
+  }
+  .ingreso button {
+    font-size: 1.4rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 1440px) {
+  .documentos {
+    gap: 3rem;
+    margin: 15rem 0 5rem;
+    grid-template-columns: repeat(2, 22rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 1.2rem;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 110%;
+    height: 110px;
+    margin: 5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.4rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 1440px) {
+  .form-container {
+    margin: 15rem 0 5rem;
+    width: 80%;
+  }
+  .form-container label {
+    font-size: 1.5rem;
+  }
+  .form-container label p {
+    font-size: 1.3rem;
+  }
+  .form-container input {
+    width: 17rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+/* navbar */
+@media (max-width: 1280px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.4rem;
+    padding: 0.75rem;
+  }
+  header nav ul a:hover {
+    color: rgb(248, 117, 22);
+  }
+}
+/* titulo */
+@media (max-width: 1280px) {
+  .principal {
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 1280px) {
+  .servicios1 {
+    margin: 11rem 0 5rem;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 1280px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 1280px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2rem 8rem;
+    padding: 2%;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 1280px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 1280px) {
+  .unidades1 {
+    margin: 11rem 0 5rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 2rem 8rem;
+  }
+  .unidades1 button {
+    font-size: 1rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 1280px) {
+  .ingreso {
+    gap: 4rem;
+    margin: 11rem 0 5rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .ingreso button {
+    font-size: 1.2rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 1280px) {
+  .documentos {
+    margin: 11rem 0 5rem;
+    grid-template-columns: repeat(2, 17rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 1rem;
+    border-color: transparent;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 120px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.2rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 1280px) {
+  .form-container {
+    margin: 11rem 0 5rem;
+    width: 80%;
+  }
+  .form-container label {
+    font-size: 1.2rem;
+  }
+  .form-container label p {
+    font-size: 1rem;
+  }
+  .form-container input {
+    width: 17rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+}
+/* navbar */
+@media (max-width: 1024px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0.75rem;
+  }
+  header nav ul a:hover {
+    color: rgb(248, 117, 22);
+  }
+}
+/* titulo */
+@media (max-width: 1024px) {
+  .principal {
+    grid-template-rows: repeat(2, 8rem);
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 2.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 1024px) {
+  .servicios1 {
+    margin: 10rem 0 5rem;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 20rem);
+    grid-template-rows: repeat(2, 10rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 1024px) {
+  .medio {
+    font-size: 1.6rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 1024px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 7rem);
+    justify-content: center;
+    gap: 2rem 8rem;
+    padding: 2%;
+  }
+  .servicios2 button {
+    font-size: 1.3rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 1024px) {
+  footer p {
+    font-size: 1.1rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 1024px) {
+  .unidades1 {
+    margin: 10rem 0 5rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 2rem 8rem;
+  }
+  .unidades1 button {
+    font-size: 1rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 1024px) {
+  .ingreso {
+    gap: 4rem;
+    margin: 10rem 0 5rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .ingreso button {
+    font-size: 1.2rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 1024px) {
+  .documentos {
+    margin: 10rem 0 5rem;
+    grid-template-columns: repeat(2, 17rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 1rem;
+    border-color: transparent;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 120px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1.2rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 1024px) {
+  .form-container {
+    margin: 10rem 0 5rem;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .form-container label {
+    font-size: 1.2rem;
+  }
+  .form-container label p {
+    font-size: 1rem;
+  }
+  .form-container input {
+    width: 17rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+/* navbar */
+@media (max-width: 768px) {
+  header .logo img {
+    width: 5rem;
+  }
+  header .lupa img {
+    width: 2rem;
+  }
+  header nav ul {
+    padding-bottom: 2%;
+  }
+  header nav ul a {
+    text-align: left;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+  header nav ul a:hover {
+    color: rgb(248, 117, 22);
+  }
+}
+/* titulo */
+@media (max-width: 768px) {
+  .principal {
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 768px) {
+  .servicios1 {
+    margin: 10rem 0 5rem;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 16rem);
+    grid-template-rows: repeat(2, 9rem);
+  }
+  .servicios1 button {
+    font-size: 1.6rem;
+  }
+}
+/* seccion media */
+@media (max-width: 768px) {
+  .medio {
+    font-size: 1.2rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 768px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 11rem);
+    grid-template-rows: repeat(3, 5rem);
+    justify-content: center;
+    gap: 2rem 11rem;
+    padding: 2%;
+  }
+  .servicios2 button {
+    font-size: 1rem;
+    border-radius: 2rem;
+  }
+}
+/* footer */
+@media (max-width: 768px) {
+  footer p {
+    font-size: 0.8rem;
+    padding: 2%;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 768px) {
+  .unidades1 {
+    margin: 10rem 0 5rem;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 7rem);
+    gap: 2rem 8rem;
+  }
+  .unidades1 button {
+    font-size: 1rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 768px) {
+  .ingreso {
+    gap: 3rem;
+    margin: 10rem 0 5rem;
+    grid-template-columns: repeat(2, 18rem);
+    grid-template-rows: repeat(2, 6rem);
+  }
+  .ingreso button {
+    font-size: 1rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 768px) {
+  .documentos {
+    margin: 10rem 0 5rem;
+    grid-template-columns: repeat(2, 15rem);
+    grid-template-rows: repeat(3, 6rem);
+  }
+  .documentos button {
+    font-size: 0.8rem;
+    border-color: transparent;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 120px;
+    margin: 5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 1rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 768px) {
+  .form-container {
+    margin: 10rem 0 5rem;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .form-container label {
+    font-size: 1.2rem;
+  }
+  .form-container label p {
+    font-size: 1rem;
+  }
+  .form-container input {
+    width: 17rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+/* navbar */
+@media (max-width: 425px) {
+  header .logo {
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+  header .logo img {
+    width: 4.375rem;
+  }
+  header nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(217, 217, 217);
+    margin-left: -70%;
+  }
+  header nav ul li {
+    display: block;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  .menu-icon {
+    display: block;
+    height: 50px;
+  }
+}
+/* titulo */
+@media (max-width: 425px) {
+  .principal {
+    display: grid;
+    grid-template-columns: repeat(2, 14rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .foto_principal img {
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .titulo {
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-right: 7%;
+  }
+  .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-right: 15%;
+  }
+}
+/* servicios 1*/
+@media (max-width: 425px) {
+  .servicios1 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(2, 9rem);
+    gap: 0.8rem;
+    margin: 5rem 0 3rem;
+  }
+  .servicios1 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* seccion media */
+@media (max-width: 425px) {
+  .medio {
+    font-size: 0.9rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 425px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(3, 9rem);
+    margin-top: 1rem;
+    gap: 0.8rem;
+  }
+  .servicios2 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* footer */
+@media (max-width: 425px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 425px) {
+  .unidades1 {
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 3rem;
+  }
+  .unidades1 button {
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 425px) {
+  .ingreso {
+    gap: 1rem 2rem;
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .ingreso button {
+    font-size: 0.7rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 425px) {
+  .documentos {
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.8rem;
+    border-color: transparent;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 100px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 0.8rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 425px) {
+  .form-container {
+    margin: 5rem 0 3rem;
+    width: 80%;
+    padding-left: 10%;
+  }
+  .form-container label {
+    font-size: 1.1rem;
+  }
+  .form-container label p {
+    font-size: 1rem;
+  }
+  .form-container input {
+    width: 17rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+/* navbar */
+@media (max-width: 375px) {
+  header .logo {
+    position: absolute;
+    left: 48%;
+    transform: translateX(-50%);
+  }
+  header .logo img {
+    width: 4.375rem;
+  }
+  header nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(217, 217, 217);
+    margin-left: -70%;
+  }
+  header nav ul li {
+    display: block;
+  }
+  header nav ul li a {
+    font-size: 0.8rem;
+  }
+  .menu-icon {
+    display: block;
+    height: 50px;
+  }
+}
+/* titulo */
+@media (max-width: 375px) {
+  .principal {
+    display: grid;
+    grid-template-columns: repeat(2, 11.7rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .foto_principal img {
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .titulo {
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-right: 7%;
+  }
+  .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-right: 15%;
+  }
+}
+/* servicios 1*/
+@media (max-width: 375px) {
+  .servicios1 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(2, 9rem);
+    gap: 0.8rem;
+    margin: 5rem 0 3rem;
+  }
+  .servicios1 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* seccion media */
+@media (max-width: 375px) {
+  .medio {
+    font-size: 0.9rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 375px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 0.8rem;
+    padding-top: 2%;
+  }
+  .servicios2 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* footer */
+@media (max-width: 375px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 375px) {
+  .unidades1 {
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(3, 5rem);
+  }
+  .unidades1 button {
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 375px) {
+  .ingreso {
+    gap: 1rem 1rem;
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(2, 4rem);
+  }
+  .ingreso button {
+    font-size: 0.8rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 375px) {
+  .documentos {
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.7rem;
+    border-color: transparent;
+  }
+  .documentos button:hover {
+    transition: width 2s, height 2s, margin 2s;
+    width: 100%;
+    height: 100px;
+    margin: -5% auto;
+    color: black;
+    background-color: gray;
+    font-size: 0.8rem;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 375px) {
+  .form-container {
+    width: 80%;
+    margin: 5rem 0 3rem;
+    padding-left: 10%;
+  }
+  .form-container label {
+    font-size: 1rem;
+  }
+  .form-container label p {
+    font-size: 0.9rem;
+  }
+  .form-container input {
+    width: 15rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+/* navbar */
+@media (max-width: 320px) {
+  header .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  header .logo img {
+    width: 3.125rem;
+  }
+  header nav ul {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(217, 217, 217);
+    margin-left: -50%;
+  }
+  header nav ul li {
+    display: block;
+  }
+  header nav ul li a {
+    font-size: 0.7rem;
+  }
+  .menu-icon {
+    display: block;
+  }
+}
+/* titulo */
+@media (max-width: 320px) {
+  .principal {
+    display: grid;
+    grid-template-columns: repeat(2, 10rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .foto_principal img {
+    background-size: cover;
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .titulo {
+    background-position: center;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 0;
+  }
+  .titulo h1, .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-right: 2rem;
+  }
+  .titulo h2 {
+    font-size: 1rem;
+    padding-top: 0%;
+    padding-right: 4rem;
+  }
+}
+/* servicios 1*/
+@media (max-width: 320px) {
+  .servicios1 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(2, 9rem);
+    gap: 0.8rem;
+    margin: 5rem 0 3rem;
+  }
+  .servicios1 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* seccion media */
+@media (max-width: 320px) {
+  .medio {
+    font-size: 0.9rem;
+  }
+}
+/* servicios 2 */
+@media (max-width: 320px) {
+  .servicios2 {
+    grid-template-columns: repeat(2, 7rem);
+    grid-template-rows: repeat(3, 9rem);
+    gap: 0.8rem;
+    padding-top: 2%;
+  }
+  .servicios2 button {
+    font-size: 0.8rem;
+    border-radius: 1rem;
+  }
+}
+/* footer */
+@media (max-width: 320px) {
+  footer p {
+    font-size: 0.7rem;
+  }
+}
+/***** UNIDADES ******/
+@media (max-width: 320px) {
+  .unidades1 {
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+    gap: 5%;
+  }
+  .unidades1 button {
+    border-radius: 1rem;
+    font-size: 0.8rem;
+  }
+}
+/***** INVENTARIO ******/
+@media (max-width: 320px) {
+  .ingreso {
+    gap: 1rem 1rem;
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 9rem);
+    grid-template-rows: repeat(2, 5rem);
+  }
+  .ingreso button {
+    font-size: 0.7rem;
+  }
+}
+/***** PROCEDIMIENTOS ******/
+@media (max-width: 320px) {
+  .documentos {
+    margin: 5rem 0 3rem;
+    grid-template-columns: repeat(2, 8rem);
+    grid-template-rows: repeat(3, 4rem);
+  }
+  .documentos button {
+    font-size: 0.7rem;
+    border-color: transparent;
+  }
+}
+/***** CONTACTOS ******/
+@media (max-width: 320px) {
+  .form-container {
+    width: 80%;
+    margin: 5rem 0 3rem;
+    padding-left: 10%;
+  }
+  .form-container label {
+    font-size: 0.9rem;
+  }
+  .form-container label p {
+    font-size: 0.8rem;
+  }
+  .form-container input {
+    width: 15rem;
+    height: 3rem;
+  }
+  .form-container textarea {
+    height: 8rem;
+  }
+  .form-container button {
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

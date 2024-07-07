@@ -1,0 +1,50 @@
+.logo{
+    width:10%;
+    img {
+    width: 8rem;
+    }
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+        li {
+        display: inline;
+        a {
+            font-family: fuente1;
+            color: $color_texto2;
+            text-decoration: none;
+            padding: 1.25rem;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            &:hover {
+                color: $color_titulo;
+            }
+        }
+    }
+}
+.lupa{
+    width:10%;
+    img {
+    width: 30%;
+    float: right;
+    }
+}
+/* Icono menu toggle */
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    color: rgba(248, 117, 22, 1);
+    cursor: pointer;
+}
+
+/* ocultar menu en la vista por defecto */
+.menu-toggle {
+    display: none;
+}
+.menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+    flex-direction: column;
+}
